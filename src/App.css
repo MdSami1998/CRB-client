@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Cookie&family=Great+Vibes&family=Hind&family=Lato&family=Lobster&family=Lobster+Two&family=Merriweather&family=Merriweather+Sans:ital@1&family=Pacifico&family=Playfair+Display&family=Poppins&family=Rubik&family=Satisfy&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Hind&family=Lato&family=Lobster&family=Lobster+Two&family=Merriweather&family=Merriweather+Sans:ital@1&family=Pacifico&family=Playfair+Display&family=Rubik&family=Ubuntu&display=swap');
 .App {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.banner-font{
+  font-family: 'Lobster', cursive;
 }
 
 .App-logo {
