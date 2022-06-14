@@ -73,7 +73,7 @@ const AddPlayer = () => {
                         <label className="label">
                             <span className="label-text  text-secondary text-md font-bold">Game ID:</span>
                         </label>
-                        <input type="number" placeholder='In game ID' className="input input-bordered" name='gameId' required />
+                        <input type="text" placeholder='In game ID' className="input input-bordered" name='gameId' required />
                     </div>
 
                     <div className="form-control">
@@ -87,35 +87,35 @@ const AddPlayer = () => {
                         <label className="label">
                             <span className="label-text  text-secondary text-md font-bold">Match Played:</span>
                         </label>
-                        <input type="number" placeholder='Match Played' className="input input-bordered" name='played' required />
+                        <input type="number" placeholder='Match Played' className="input input-bordered" name='played' defaultValue={0} />
                     </div>
 
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text  text-secondary text-md font-bold">Match Won:</span>
                         </label>
-                        <input type="number" placeholder='Match Won' className="input input-bordered" name='matchwin' required />
+                        <input type="number" placeholder='Match Won' className="input input-bordered" name='matchwin' defaultValue={0} />
                     </div>
 
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text  text-secondary text-md font-bold">Match Lost:</span>
                         </label>
-                        <input type="number" placeholder='Match Lost' className="input input-bordered" name='matchlost' required />
+                        <input type="number" placeholder='Match Lost' className="input input-bordered" name='matchlost' defaultValue={0} />
                     </div>
 
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text  text-secondary text-md font-bold">Match Draw:</span>
                         </label>
-                        <input type="number" placeholder='Match Draw' className="input input-bordered" name='matchdraw' required />
+                        <input type="number" placeholder='Match Draw' className="input input-bordered" name='matchdraw' defaultValue={0} />
                     </div>
 
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text  text-secondary text-md font-bold">Win Parcentage:</span>
                         </label>
-                        <input type="text" placeholder='Win Parcentage' className="input input-bordered" name='winrate' required />
+                        <input type="text" placeholder='Win Parcentage' className="input input-bordered" name='winrate' defaultValue={0} />
                     </div>
 
                     <div className="form-control">

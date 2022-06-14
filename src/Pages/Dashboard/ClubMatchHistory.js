@@ -2,6 +2,7 @@ import React from 'react';
 import { useQuery } from 'react-query';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { FaArrowRight } from 'react-icons/fa';
 
 const ClubMatchHistory = () => {
     const { data: clubMatchRecords, isLoading, refetch } = useQuery('clubMatchRecords', () =>
@@ -38,13 +39,13 @@ const ClubMatchHistory = () => {
         <div>
             <div className='flex justify-evenly items-center'>
                 <h1>Club Match History</h1>
-                <Link to='/addmatchhistory' className='btn btn-accent btn-sm'>Enter new record</Link>
+                <Link to='/addmatchhistory' className='btn btn-accent btn-sm gap-2'>Enter new record <FaArrowRight></FaArrowRight></Link>
             </div>
             <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                     <thead>
                         <tr className='text-secondary'>
-                            <th></th>
+                            <th className='text-lg'>NO.</th>
                             <th className='text-lg'>Name</th>
                             <th className='text-lg'>Formation</th>
                             <th className='text-lg'>Point</th>

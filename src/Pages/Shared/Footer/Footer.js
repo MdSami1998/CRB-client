@@ -12,29 +12,20 @@ const Footer = () => {
         navigate('/home');
     };
     return (
-        <footer className='h-auto'>
-            <div className='footer-info p-0 md:p-10 pb-0'>
+        <footer class="footer justify-around items-center p-10 bg-neutral text-neutral-content">
+            <div>
                 <div>
                     <h1 onClick={handleLogoClick} className='flex justify-center items-center text-2xl pt-5 md:pt-0 md:text-4xl font-bold cursor-pointer'><img className='w-12' src={logo} alt="" />&nbsp; <span className='text-accent'>Cumilla</span>&nbsp;Raging Bulls</h1>
+                    <small className='mt-3 text-accent text-center'> &copy; cumillaragingbulls {year} Allright Reserved</small>
                 </div>
-                <div className='flex flex-col items-center md:block'>
-                    <p><small>About online manufacturer </small></p>
-                    <p><small>Read our blog</small></p>
-                    <p><small>Sign Up to deliver</small>  </p>
-                    <p><small>Get you products</small></p>
-                </div>
-                <div className='flex flex-col items-center md:block'>
-                    <p><small>Get help</small></p>
-                    <p><small>Read FAQS</small></p>
-                    <p><small>view ALL CITIES</small></p>
-                    <p><small>Factory near me</small></p>
-                </div>
+                
             </div>
-            <div className='flex flex-col items-center justify-end p-8'>
-                <div className='w-10/12 h-0.5 bg-secondary'>
+            <div>
+                <div class="grid grid-flow-col gap-10">
+                <a href='https://www.facebook.com/groups/3188393331481478' target='_blank' rel='noreferrer'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
 
+                    <a href='https://www.facebook.com/groups/3188393331481478' target='_blank' rel='noreferrer'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
                 </div>
-                <small className='mt-3 text-accent'> &copy; cumillaragingbulls {year} Allright Reserved</small>
             </div>
         </footer>
     );

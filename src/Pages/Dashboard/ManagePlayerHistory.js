@@ -2,6 +2,7 @@ import React from 'react';
 import { useQuery } from 'react-query'
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { FaArrowRight } from 'react-icons/fa';
 
 const ManagePlayerHistory = () => {
     const navigate = useNavigate();
@@ -67,15 +68,15 @@ const ManagePlayerHistory = () => {
     }
     return (
         <div>
-            <div className='flex justify-evenly items-center'>
-            <h1 className="text-4xl font-bold my-10 banner-font text-blue-800 tracking-widest">Players : {players.length}</h1>
-                <Link to='/addplayer' className='btn btn-accent hover:bg-transparent hover:text-accent hover:scale-110 btn-md flex justify-end mt-3 text-white'>New Player Entry Here</Link>
+            <div className='flex justify-around items-center'>
+                <h1 className="text-4xl font-bold my-10 banner-font text-blue-800 tracking-widest">Players : {players.length}</h1>
+                <Link to='/addplayer' className='btn btn-accent hover:bg-transparent hover:text-accent hover:scale-110 btn-sm flex justify-end items-center gap-2 mt-3 text-black'>New Player Entry Here <FaArrowRight></FaArrowRight></Link>
             </div>
             <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                     <thead>
                         <tr className='text-secondary'>
-                            <th></th>
+                            <th className='text-lg'>NO.</th>
                             <th></th>
                             <th className='text-lg'>Name</th>
                             <th className='text-lg'>Played</th>
@@ -102,15 +103,15 @@ const ManagePlayerHistory = () => {
                                 <td className='uppercase'>{player.lost}</td>
                                 <td className='uppercase'>{player.winParcentage}%</td>
                                 <td>
-                                    <button onClick={() => handleUpdateDB(player._id)} className="btn bg-transparent  hover:bg-accent border-accent text-accent hover:text-white hover:scale-110 btn-sm flex justify-end mt-3">Update</button>
+                                    <button onClick={() => handleUpdateDB(player._id)} className="btn bg-transparent  hover:bg-accent border-accent text-accent hover:text-white hover:scale-110 btn-xs flex justify-end mt-3">Update</button>
                                 </td>
 
                                 <td>
-                                    <button onClick={() => handlePlayerOfTheMonth(player._id, player)} className="btn bg-transparent  hover:bg-accent border-accent text-accent hover:text-white hover:scale-110 btn-sm flex justify-end mt-3">Add to the list</button>
+                                    <button onClick={() => handlePlayerOfTheMonth(player._id, player)} className="btn bg-transparent  hover:bg-accent border-accent text-accent hover:text-white hover:scale-110 btn-xs flex justify-end mt-3">Add to the list</button>
                                 </td>
 
                                 <td>
-                                    <button onClick={() => handleRemovePlayer(player._id, player.name)} className="btn bg-transparent  hover:bg-accent border-accent text-accent hover:text-white hover:scale-110 btn-sm flex justify-end mt-3">Remove Player</button>
+                                    <button onClick={() => handleRemovePlayer(player._id, player.name)} className="btn bg-transparent  hover:bg-accent border-accent text-accent hover:text-white hover:scale-110 btn-xs flex justify-end mt-3">Remove Player</button>
                                 </td>
                             </tr>)
                         }
