@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import AddPlayerMatchHistory from './AddPlayerMatchHistory'
 
 const UpdatePlayerHistory = () => {
     const { id } = useParams();
@@ -253,6 +254,7 @@ const UpdatePlayerHistory = () => {
                     </div>
                 </form>
             </div>
+            <AddPlayerMatchHistory name={player.name}></AddPlayerMatchHistory>
         </div>
     );
 };

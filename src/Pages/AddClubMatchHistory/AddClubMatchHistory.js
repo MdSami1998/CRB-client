@@ -63,7 +63,7 @@ const AddClubMatchHistory = () => {
                         <label className="label">
                             <span className="label-text text-accent">Match Point</span>
                         </label>
-                        <input type="text" placeholder='10 - 5' className="input input-bordered" name='matchPoint' required />
+                        <input type="text" placeholder='ex: 10 - 5' className="input input-bordered" name='matchPoint' required />
                     </div>
 
                     <div className="form-control">
